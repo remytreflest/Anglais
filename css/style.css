@@ -1,0 +1,145 @@
+body{
+    font-size: 1.2em;
+}
+
+#img-accueil{
+    background: url("../src/img/anglaisAccueil.jpg");
+    background-size: cover;
+    height: calc(100vh - 60px);
+    width: 100%;
+    z-index: -1;
+}
+
+#text-accueil{
+    position: absolute;
+    width: 400px;
+    top: 50%;
+    left: calc(50% - 200px);
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.dropdown-header{
+    color: rgb(114, 114, 114);
+    padding: 5px 0;
+    width: 100%;
+    font-size: 1.1em;
+    background-color: #e5f0fa;
+    text-align: center;
+}
+
+#navbarNav ul {
+    padding: 0;
+}
+
+.container{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 0px;
+}
+
+.lacarte {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+#devant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #e5f0fa;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.card-text, .blockquote-footer{
+    min-height: 20%;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.card-body{
+    position: relative;
+}
+
+#numeroCarte{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    position: absolute;
+    bottom: 4%;
+}
+
+.card-text{
+    margin-top: 25px;
+}
+
+#derriere {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #eeffe0;
+    transform: rotateY(180deg);
+    box-shadow: 3px 3px 10px grey;
+}
+
+.w100{
+    width: 100px;
+}
+
+#retourner{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+}
+
+#button{
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0%);
+    visibility: hidden;
+}
+
+#button2{
+    position: absolute;
+    left: 50%;
+    bottom: 7%;
+    transform: translate(-50%, 0%);
+}
+
+.rotate{
+    transform: rotateY(180deg);
+}
+
+.french{
+    background: url("../src/img/frenchFlag.jpg");
+    background-size: cover;
+    background-position: 100% 50%;
+    opacity: 1;
+}
+
+.england{
+    background: url("../src/img/englandFlag.jpg");
+    background-size: cover;
+    background-position: 100% 45%;
+    opacity: 1;
+}
+
+.french textarea, .french textarea:focus, .england textarea, .england textarea:focus{
+    background-color: rgba(204, 204, 204, 0.603);
+    color: black;
+    font-size: 1.1em;
+}
